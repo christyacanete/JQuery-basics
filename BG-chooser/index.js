@@ -4,7 +4,7 @@ $(document).ready(function(){
         $(".mini_boxes").css("border","0");
     });
     $(".mini_boxes").click(function (event) {
-        event.stopPropagation();
+        event.stopPropagation();        // stops the bubbling of an event to parent elements
         $(this).css("border", "2px solid yellow");
         var bg = $(this).attr("src");
         $("#main-box").css("background-image","url("+bg+")");
