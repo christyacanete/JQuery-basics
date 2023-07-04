@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Mini Documentation</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet/less" type="text/css" href="style.less">
+    <script src="less.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="side-bar">
+            <ul>
+                <li><a href="#click">.click()</a></li>
+                <li><a href="#hide">.hide()</a></li>
+                <li><a href="#show">.show()</a></li>
+                <li><a href="#toggle">.toggle()</a></li>
+                <li><a href="#slideDown">.slideDown()</a></li>
+                <li><a href="#slideUp">.slideUp()</a></li>
+                <li><a href="#slideToggle">.slideToggle()</a></li>
+                <li><a href="#fadeIn">.fadeIn()</a></li>
+                <li><a href="#fadeOut">.fadeOut()</a></li>
+                <li><a href="#addClass">.addClass()</a></li>
+                <li><a href="#before">.before()</a></li>
+                <li><a href="#after">.after()</a></li>
+                <li><a href="#append">.append()</a></li>
+                <li><a href="#html">.html()</a></li>
+                <li><a href="#attr">.attr()</a></li>
+                <li><a href="#val">.val()</a></li>
+                <li><a href="#text">.text()</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>JQuery Mini Documentation</h1>
+            <h2 id="click">Click</h2>
+            <p><span>.click()</span>Bind an event handler to the “click” JavaScript event, or trigger that event on an element.</p>
+            <div class="example-box">
+                <p>Example: Click this button to display the alert box.</p><button id="ex1">Click me!</button>
+            </div>
+            <h2 id="hide">Hide</h2>
+            <p><span>.hide()</span>Hide the matched elements.</p>
+            <div class="example-box"> 
+                <p>Example: Click this button to hide the sentence below.</p><p id="ex-hide">Hide me!</p><button id="ex2">Hide</button>
+            </div>
+            <h2 id="show">Show</h2>
+            <p><span>.show()</span>Display the matched elements.</p>
+            <div class="example-box">
+                <p>Example: Click the show button to show the sentence below.</p><p id="ex-show">Surprise!</p><button id="ex3-hide">Hide</button><button id="ex3">Show</button>
+            </div>
+            <h2 id="toggle">Toggle</h2>
+            <p><span>.toggle()</span>Display or hide the matched elements.</p>
+            <div class="example-box">
+                <p>Example: Click this button to toggle the sentence between hide() and show().</p><p id="ex-toggle">Hide and show me!</p><button id="ex4">Toggle</button>
+            </div>
+            <h2 id="slideDown">Slide Down</h2>
+            <p><span>.slideDown()</span>Display the matched elements with a sliding motion.</p>
+            <div class="example-box">
+                <p>Example: Click the button below to show an image!</p><button id="ex5">Slide down</button><img id="show-kitty" src="./img/kitty.gif" alt="">
+            </div>
+            <h2 id="slideUp">Slide Up</h2>
+            <p><span>.slideUp()</span>Hide the matched elements with a sliding motion.</p>
+            <div class="example-box">
+                <p>Example: Click the button below to hide the image!</p><button id="ex6">Slide up</button><img id="happy-dogs" src="./img/happy-dogs.gif" alt="">
+            </div>
+            <h2 id="slideToggle">Slide Toggle</h2>
+            <p><span>.slideToggle()</span>Display or hide the matched elements with a sliding motion.</p>
+            <div class="example-box">
+                <p>Example: Click the button below to show an image!</p><button id="ex7">Slide toggle</button><img id="happy-cat" src="./img/happy-cat.gif" alt="">
+            </div>
+            <h2 id="fadeIn">Fade In</h2>
+            <p><span>.fadeIn()</span>Display the matched elements by fading them to opaque.</p>
+            <div class="example-box">
+                <p>Example: Click the button below to show an image!</p><button id="ex8">Fade in</button><img id="stay-happy" src="./img/stay-happy.gif" alt="">
+            </div>
+            <h2 id="fadeOut">Fade Out</h2>
+            <p><span>.fadeOut()</span>Hide the matched elements by fading them to transparent.</p>
+            <div class="example-box">
+                <p>Example: Click the button below to hide the image!</p><button id="ex9">Fade out</button><img id="cat-box" src="./img/cat-box.gif" alt="">
+            </div>
+            <h2 id="addClass">Add Class</h2>
+            <p><span>.addClass()</span>Adds the specified class(es) to each element in the set of matched elements.</p>
+            <div class="example-box">
+                <p>Example: Click the button below to change the color of first sentence by adding a class</p>
+                <button id="ex10">Add class</button>
+                <p id="ex10-sentence">Change the font color of this sentence.</p>
+                <p>Keep this sentence the same.</p>
+            </div>
+            <h2 id="before">Before</h2>
+            <p><span>.before()</span>Insert content, specified by the parameter, before each element in the set of matched elements.</p>
+            <div class="example-box">
+                <p>Example: Click the button below to insert 'Hello' before the first sentence.</p>
+                <button id="ex11">Insert a word</button>
+                <p id="ex11-sentence">How are you?</p>
+            </div>
+            <h2 id="after">After</h2>
+            <p><span>.after()</span>Insert content, specified by the parameter, after each element in the set of matched elements.</p>
+            <div class="example-box">
+                <p>Example: Click the button below to insert 'Goodbye!' after the first sentence.</p>
+                <button id="ex12">Add a word</button>
+                <p id="ex12-sentence">Hello there!</p>
+            </div>
+            <h2 id="append">Append</h2>
+            <p><span>.append()</span>Insert content, specified by the parameter, to the end of each element in the set of matched elements.</p>
+            <div class="example-box">
+                <p>Example: Click the button below to append a new item on the list.</p>
+                <p id="mycats-love">Things that cats love: </p>
+                <ul id="cats-love">
+                    <li>Tuna treats</li>
+                    <li>Catsicles</li>
+                    <li>Water fountains</li>
+                </ul>
+                <button id="ex13">Append</button>
+            </div>
+            <h2 id="html">HTML</h2>
+            <p><span>.html()</span>Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element.</p>
+            <div class="example-box">
+                <p>Example: Click the button below to change the entire sentence.</p>
+                <p id="change-html">I hate cats!</p>
+                <button id="ex14">html</button>
+            </div>
+            <h2 id="attr">Attr</h2>
+            <p><span>.attr()</span>Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</p>
+            <div class="example-box">
+                <p>Example: Click the button below to change the height attribute of the image.</p>
+                <img id="fluffy-cat" src="./img/fluffy-cat.jpg" alt="">
+                <button id="ex15">Change height attribute</button>
+            </div>
+            <h2 id="val">Val</h2>
+            <p><span>.val()</span>Get the current value of the first element in the set of matched elements or set the value of every matched element.</p>
+            <div class="example-box">
+                <p>Example: Click the button below to set the input value of the field.</p>
+                <p>Name: <input type="text" name="user"></p>
+                <button id="ex16">Set the input value</button>
+            </div>
+            <h2 id="text">Text</h2>
+            <p><span>.text()</span>Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.</p>
+            <div class="example-box">
+                <p>Example: Click the button to set the content of the p element below.</p>
+                <p id="set-text">Hello, how are you?</p>
+                <button id="ex17">Set the text content</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
